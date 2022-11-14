@@ -3,9 +3,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid</title>
     <link  rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Superman_shield.svg/1280px-Superman_shield.svg.png">
- </head>
+    <style>.header
+        {border: 10px solid black;background-color: blue;
+        display: grid;
+        grid-template-rows: 80px 80px 80px 80px; 
+        grid-template-columns: 80px 80px 80px 80px;
+        grid-gap: 10px;
+        }
+        </style>
+         <style>.box1     
+                {border: 2px solid black;background-color:  yellow;
+            display: grid;
+            grid-gap:10px;
+            grid-column:1/2;
+             grid-row:2/3; 
+            }
+            </style>
+   <style>.box2     
+    {border: 2px solid black;background-color:red;
+display: grid;
+grid-gap: 10px;
+grid-column:2/3;
+        grid-row:2/3;
+}
+</style>
+<style>.box3     
+    {border: 2px solid black;background-color: lightgreen;
+display: grid;
+grid-template-columns: 80px 80px 80px 80px;
+grid-template-rows: repeat(3,80px) 80px; 
+grid-gap:10px;
+grid-column:3/4;
+        grid-row:2/3;
+}
+</style>
+<style>.Footer     
+    {border: 2px solid black;background-color: lightcoral;
+display: grid;
+grid-template-columns: 80px 80px  80px 80px;
+grid-template-rows: repeat(3,80px) 80px; 
+grid-gap: 10px;
+grid-column:1/4;
+grid-row:3/4;
+}
+</style>    
+</head>
 <body>
+  <div class="header">header
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="Footer">Footer</div>
+</div>
 </body>
 </html>
