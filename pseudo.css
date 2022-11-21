@@ -1,0 +1,34 @@
+div{font-size: 30px;
+text-align: center;}
+
+div:hover
+    {font-size:350%;}
+
+    .a:hover
+    {
+    background-color: red;}
+    
+    .a:link
+    {color: yellow;}
+
+    .a:visited
+    {color:green;}
+
+    .b:hover        
+    {background-color: yellow;}
+
+    .b:visited
+    {color: yellow;}
+
+    .b:link
+    {background-color: aqua;}
+    
+    .c:hover
+    {background-color:aqua;}
+
+    .c:link
+    {background-color:yellow;}
+
+    .c:visited
+    {background-color: aqua;}
+ 
