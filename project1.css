@@ -1,0 +1,26 @@
+*
+{box-sizing: border-box;
+    margin: 0%;
+    font-family: arial;
+}
+.header1
+{
+height: 30px;
+width: 100%;
+display: flex;
+background-color: black;
+color: grey;
+line-height: 30px;
+font-weight: bold;
+text-align: center;
+}
+.header
+{
+    list-style: none;
+    display:flex;
+    word-spacing:5%;
+    text-align:center;
+    align-content: center;
+    padding-left: 41.5%;
+}
+   

@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x
+        {height: 150px;
+        width: 150px;
+        border: 5px solid red;
+        border-left: transparent;
+        border-right: transparent;
+        border-bottom: transparent;
+        border-radius: 50%;
+        animation-name: demo;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+    .y
+        {height: 150px;
+        width: 150px;
+        border: 5px solid yellow;
+        border-left: transparent;
+        border-right: transparent;
+        border-bottom: transparent;
+        border-radius: 50%;
+        animation-name: demo;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes demo
+    {
+    0%{transform:rotate(0%)}
+
+    100%{transform:rotate(360deg)}
+    }
+    </style>
+</head>
+<body bgcolor="black">
+    <div align="center">
+    <div class="x">
+    <div class="y"></div>
+    </div></div>
+</body>
+</html>
