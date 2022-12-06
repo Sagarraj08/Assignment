@@ -35,11 +35,33 @@
     height: 100px;
     margin: 20px 20px 0px 20px;
 }
-
-.n {
+.n {display: inline-block;
     font-size: 60px;
-    padding-top: 33px;
-}
+    padding-top: 33px; 
+   }
+   .n:before{content: attr(data-text);
+position: absolute;
+transform-origin: bottom;
+transform: rotateX(180deg);
+background: linear-gradient(0deg,#fff 0,transparent 60%);
+-webkit-background-clip: text;
+color: transparent;
+line-height: 64px;
+opacity: 0.8;}
+
+.m {display: inline-block;
+    font-size: 60px;
+    padding-top: 33px; 
+   }
+   .m:before{content: attr(data-text);
+position: absolute;
+transform-origin: bottom;
+transform: rotateX(180deg);
+background: linear-gradient(0deg,rgb(4, 229, 4),transparent 60%);
+-webkit-background-clip: text;
+color: transparent;
+line-height: 64px;
+opacity: .8;}
 
 .menu {
     list-style: none;
@@ -114,5 +136,5 @@
     margin-top: 20px;
     font-size: 20px;
     overflow: hidden;
-    color:white;
+    color: white;
 }
