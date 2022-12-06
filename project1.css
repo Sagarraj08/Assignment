@@ -35,7 +35,8 @@
     height: 100px;
     margin: 20px 20px 0px 20px;
 }
-.n {display: inline-block;
+
+/* .n {display: inline-block;
     font-size: 60px;
     padding-top: 33px; 
    }
@@ -61,7 +62,7 @@ background: linear-gradient(0deg,rgb(4, 229, 4),transparent 60%);
 -webkit-background-clip: text;
 color: transparent;
 line-height: 64px;
-opacity: .8;}
+opacity: .8;} */
 
 .menu {
     list-style: none;
@@ -127,7 +128,7 @@ opacity: .8;}
 
 .feature {
     width: 70%;
-    height: 280px;
+    height: 240px;
     text-align: justify;
     margin-right: 5%;
     margin-left: 5%;
@@ -138,3 +139,75 @@ opacity: .8;}
     overflow: hidden;
     color: white;
 }
+
+.welcome {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+}
+
+.welcome1 {
+    text-align: justify;
+    height: 540px;
+    width: 60%;
+    padding-left: 5%;
+    padding-top: 3%;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.welcome2 {
+    height: 600px;
+    width: 40%;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+.welcome3 {
+    text-align: left;
+    margin-top: 0%;
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(255, 64, 0) 0%, orange 100%);
+}
+
+.checkbox2 {
+    height: 15px;
+    width: 15px;
+    margin-left: 2%;
+}
+
+.banner1 {
+    height: 320px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.banner2 {
+    height: 200px;
+    width: 95%;
+    margin-left: 5%;
+    padding-top: 10px;
+}
+.footer{margin: 0%;
+height: 90px;
+background-color:rgb(42, 42, 42);
+text-align: center;
+align-items: center;
+align-content: center;}
+
+.ul2{display: flex;
+color: gray;
+font-weight: bold;
+list-style: none;
+padding-top: 10px;
+text-align: left;
+margin-left: 540px;
+}
+.li2{padding-left: 10px;}
+.f2{color: gainsboro;}
+.f3{color: rgba(128, 128, 128, 0.500);font-size: small;padding-top: 5px;}
