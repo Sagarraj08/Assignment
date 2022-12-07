@@ -36,7 +36,7 @@
     margin: 20px 20px 0px 20px;
 }
 
-/* .n {display: inline-block;
+.n {display: inline-block;
     font-size: 60px;
     padding-top: 33px; 
    }
@@ -62,7 +62,7 @@ background: linear-gradient(0deg,rgb(4, 229, 4),transparent 60%);
 -webkit-background-clip: text;
 color: transparent;
 line-height: 64px;
-opacity: .8;} */
+opacity: .8;}
 
 .menu {
     list-style: none;
