@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="" height="400px" width="400px"> <br>
+    <button class="in">fade in</button>
+    <button class="out">fade out</button>
+    <button class="tog">fade toggle</button>
+    <script>
+        $(document).ready(function () {
+            $(".in").click(function () {
+                $("img").fadeIn(2000);
+            })
+            $(".out").click(function () {
+                $("img").fadeOut(2000);
+            })
+            $(".tog").click(function(){
+                $("img").fadeToggle(2000);s
+            })
+        });
+    </script>
+</body>
+
+</html>
