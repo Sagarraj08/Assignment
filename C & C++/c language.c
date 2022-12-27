@@ -3,7 +3,8 @@
 #define period 10
 #define principal 5000.0
 main()
-int year;
+{
+    int year;
 float amount,inrate,value;
 amount=principal;
 inrate=0.11;
@@ -14,6 +15,6 @@ value=amount+inrate*amount;
 year=year+1;
 amount=value;}
 getch();
-
+}
 
 
