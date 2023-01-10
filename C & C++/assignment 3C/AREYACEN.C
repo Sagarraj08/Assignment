@@ -4,7 +4,7 @@ int main()
 {
 int i,j,a,n,b[10],c[10],d,e;
 clrscr();
-printf("enter the value of N \n");
+printf("how many numbers of input you want to give? \n");
 scanf("%d",&n);
 
 printf("enter values numbers for first array\n");
@@ -16,7 +16,7 @@ scanf("%d",&c[i]);
 
 printf("if accending press 1 if decending press 2");
 scanf("%d",&e);
-if(e<=1)
+if(e==1)
 {
   for(i=0;i<n;++i)
  {
@@ -44,7 +44,7 @@ if(e<=1)
  for(i=0;i<n;++i)
  printf("%d ",c[i]);
 }
-else
+else if(e==2)
  {
   for(i=0;i<n;++i)
  {
