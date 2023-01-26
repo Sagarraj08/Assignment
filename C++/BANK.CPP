@@ -1,67 +1,68 @@
 #include<iostream.h>
 #include<conio.h>
 #include<string.h>
-#include<math.h>
+
 class bank
 {
-      char name[50];
-      char type[50];
-      float balance;
-      int number;
-      public: bank(int acc_no,char *acc_name,char *acc_type,float acc_balance)
-	      {
-	      number=acc_no;
-	      strcpy(name,acc_name);
-	      strcpy(type,acc_type);
-	      balance=acc_balance;
-	      }
-	     void deposit();
-	     void withdraw();
-	     void display();
+	int acno;
+	char nm[100], acctype[100];
+	float bal;
+   public:
+	bank(int acc_no, char *name, char *acc_type, float balance)
+	{
+		acno=acc_no;
+		strcpy(nm, name);
+		strcpy(acctype, acc_type);
+		bal=balance;
+	}
+	void deposit();
+	void withdraw();
+	void display();
 };
-void bank::deposit()
-		{ int amt1;
-		cout<<"\nEnter amount you want to deposit=";
-		cin>>amt1;
-		balance=balance+amt1;
-		}
-void bank::withdraw()
-		{
-		int wth1;
-		cout<<"\nEnter amount you want to withdraw";
-		cin>>wth1;
-		if(wth1>balance){cout<<"insufficient balance";};
-		balance=balance-wth1;
-		}
-void bank::display()
-		{ cout<<"\n-------------";
-		cout<<"\nAccount number :"<<number;
-		cout<<"\nName :"<<name;
-		cout<<"\nAccount type :"<<type;
-		cout<<"\nAccount balance :"<<balance;
-		}
-
-
+void bank::deposit()   //depositing
+{
+	int damt1;
+	cout<<"\n Enter Deposit Amount = ";
+	cin>>damt1;
+	bal+=damt1;
+}
+void bank::withdraw()  //withdrawing
+{
+	int wamt1;
+	cout<<"\n Enter Withdraw Amount = ";
+	cin>>wamt1;
+	if(wamt1>bal)
+		cout<<"\n Cannot Withdraw Amount";
+	bal-=wamt1;
+}
+void bank::display()  //display details
+{
+	cout<<"\n ----------------------";
+	cout<<"\n 10 digit Accout No. : "<<acno;
+	cout<<"\n Name : "<<nm;
+	cout<<"\n Account Type : "<<acctype;
+	cout<<"\n Balance : "<<bal;
+}
 int main()
-{clrscr();
-float acc_balance;
-int acc_no;
-char acc_name[50];
-char acc_type;
-cout<<"\nEnter Account Details :\n";
-cout<<"\nAccount number";
-cin>>acc_no;
-cout<<"\nName :";
-cin>>acc_name;
-cout<<"Account type";
-cin>>acc_type;
-cout<<"\nAccount balance";
-cin>>acc_balance;
-bank b1(acc_no,acc_name,acc_type,acc_balance);
-b1.deposit();
-b1.withdraw();
-b1.display();
-getch();
-return 0;
+{       clrscr();
+	int acc_no;
+	char name[100], acc_type[100];
+	float balance;
+	cout<<"\n Enter Details: \n";
+	cout<<"-----------------------";
+	cout<<"\n Accout No. ";
+	cin>>acc_no;
+	cout<<"\n Name : ";
+	cin>>name;
+	cout<<"\n Account Type : ";
+	cin>>acc_type;
+	cout<<"\n Balance : ";
+	cin>>balance;
 
+	bank b1(acc_no, name, acc_type, balance);
+	b1.deposit();
+	b1.withdraw();
+	b1.display();
+	getch();
+	return 0;
 }
