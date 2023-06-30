@@ -1,0 +1,6 @@
+tup=("sagar","anand","mahendra",1,2,3,4)
+x=tup.count(2)
+print(x)
+print(len(tup))
+y=tup.index(4)
+print(y)
